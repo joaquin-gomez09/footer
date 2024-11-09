@@ -1,0 +1,97 @@
+/* Establece un estilo global para todos los elementos */
+* {
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total del elemento */
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    display: flex; /* Utiliza Flexbox para el diseño */
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: flex-end; /* Alinea el contenido en la parte inferior */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+    background-color: rgb(255, 255, 255); /* Establece el color de fondo en negro */
+}
+
+/* Estilo para el pie de página */
+.footer {
+    position: relative; /* Posicionamiento relativo para los elementos hijos */
+    width: 100%; /* Ancho completo */
+    background-color: #000000; /* Color de fondo del pie de página */
+    min-height: 100px; /* Altura mínima para el pie de página */
+    padding: 20px 50px; /* Espaciado interno */
+    display: flex; /* Utiliza Flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    flex-direction: column; /* Coloca los elementos en una columna */
+}
+
+/* Estilo para los íconos sociales */
+.social-icon {
+    display: flex; /* Utiliza Flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente los íconos */
+    align-items: center; /* Centra verticalmente los íconos */
+    position: relative; /* Posicionamiento relativo para los elementos hijos */
+    margin: 10px 5px; /* Margen alrededor de los íconos */
+    flex-wrap: wrap; /* Permite que los íconos se envuelvan en varias líneas */
+}
+
+/* Estilo para los elementos de la lista de íconos */
+.icon-elem {
+    list-style: none; /* Elimina el estilo de lista por defecto */
+}
+
+/* Estilo para cada ícono */
+.icon {
+    color: rgb(255, 255, 255); /* Color del ícono */
+    font-size: 32px; /* Tamaño de la fuente del ícono */
+    display: inline-block; /* Muestra el ícono como un bloque en línea */
+    margin: 0 10px; /* Margen horizontal */
+    transition: 0.5s; /* Transición suave para efectos */
+}
+
+/* Efecto hover para los íconos */
+.icon:hover {
+    transform: translateY(-10px); /* Mueve el ícono hacia arriba al pasar el mouse */
+}
+
+/* Estilo para el menú */
+.menu {
+    display: flex; /* Utiliza Flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente el menú */
+    position: relative; /* Posicionamiento relativo para los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos del menú */
+    margin: 10px 0; /* Margen vertical */
+    flex-wrap: wrap; /* Permite que los elementos del menú se envuelvan en varias líneas */
+}
+
+/* Estilo para los elementos de la lista del menú */
+.menu-elem {
+    list-style: none; /* Elimina el estilo de lista por defecto */
+}
+
+/* Estilo para los íconos del menú */
+.menu-icon {
+    color: white; /* Color del ícono del menú */
+    font-size: 20px; /* Tamaño de la fuente del ícono del menú */
+    display: inline-block; /* Muestra el ícono como un bloque en línea */
+    text-decoration: none; /* Elimina el subrayado en los enlaces */
+    margin: 5px 10px; /* Margen alrededor del ícono */
+    opacity: 0.75; /* Opacidad inicial */
+    transition: 0.3s; /* Transición suave para efectos */
+}
+
+/* Efecto hover para los íconos del menú */
+.menu-icon:hover {
+    opacity: 1; /* Aumenta la opacidad al pasar el mouse */
+}
+
+/* Estilo para el texto dentro del pie de página */
+.text {
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    margin-top: 15px; /* Margen superior */
+    margin-bottom: 10px; /* Margen inferior */
+    font-size: 20px; /* Tamaño de la fuente del texto */
+}
